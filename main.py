@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import OperationalError
+from sqlalchemy.orm import sessionmaker
 
-from src.models import User
 from src import Exceptions
+from src.models import User
 
 app = Flask(__name__)
 
