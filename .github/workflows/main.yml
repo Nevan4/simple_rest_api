@@ -22,8 +22,8 @@ jobs:
     steps:
     - name: Check vars
       run: |
-        echo ${{GITHUB_HEAD_REF}}
-        echo ${{GITHUB_BASE_REF}}
+        echo ${{env.GITHUB_HEAD_REF}}
+        echo ${{env.GITHUB_BASE_REF}}
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
       with:
