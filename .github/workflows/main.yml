@@ -17,14 +17,12 @@ on:
 jobs:
   # This workflow contains a single job called "build"
    test:
-     if: ${{ github.ref == '' }}
+     if: ${{ github.head_ref == 'test' }}
      runs-on: ubuntu-latest
      steps:
        - name: dupa
          run: |
-           env
-           echo '-----------------'
-           echo $GITHUB_REF
+           echo $GITHUB_BASE_REF
    build:
     name: Build
     runs-on: ubuntu-latest
