@@ -20,6 +20,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: Check vars
+      run: |
+        echo ${{GITHUB_HEAD_REF}}
+        echo ${{GITHUB_BASE_REF}}
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
       with:
