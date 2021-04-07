@@ -12,8 +12,8 @@ class TestApi(unittest.TestCase):
     def setUp(self):
         self.person = User()
 
-        self.person.name = "Bartosz"
-        self.person.nickname = "Rupala"
+        self.person.name = "Mikoaj"
+        self.person.nickname = "Kwasniewski"
         self.person.age = 25
         self.person.id = 25
 
